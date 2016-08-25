@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
-import com.conrartweller.energy.SpatialExample.*;
+//import com.conrartweller.energy.SpatialExample.*;
 
 import org.w3c.dom.Text;
 
@@ -28,22 +28,32 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.example);
 
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         //((TextView)findViewById(R.id.text_hello_world)).setText(helloWorld());
         //((TextView) findViewById(R.id.text_hello_world)).setText("Hello this is Paki");
         //mExampleTextView = (TextView) findViewByID(R.id.text_hello_world);
-        mExampleTextView = (TextView)findViewById(R.id.text_hello_world);
-        mExampleTextView.setText(helloWorld());
+
+
+        //mExampleTextView = (TextView)findViewById(R.id.text_hello_world);
+        //mExampleTextView.setText(helloWorld());
+
+
         //mExampleTextView.setText("This should work please");
         //((TextView)findViewById(R.id.text_hello_world)).setText("This should work please");
 
+//        mAccTextView = (TextView)findViewById(R.id.tvAcc);
         mAccTextView = (TextView)findViewById(R.id.tvAcc);
-        mExampleTextView.setText(helloWorld());
+
+        mAccTextView.setText("This is accelerartion");
+
+
         mAngTextView = (TextView)findViewById(R.id.tvAng);
-        mExampleTextView.setText(helloWorld());
+        mAngTextView.setText(helloWorld());
+
         mMAgTextView = (TextView)findViewById(R.id.tvMag);
-        mExampleTextView.setText(helloWorld());
+        mMAgTextView.setText("Hello from the other sideeeeee... magnetic field check check check 2");
 
 
     }

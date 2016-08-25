@@ -12,6 +12,7 @@ import com.phidgets.*;
 
 public class SpatialExample
 {
+    //public string output1;
     public static final void main(String args[]) throws Exception {
 
         SpatialPhidget spatial;
@@ -78,6 +79,7 @@ public class SpatialExample
 							out = out + sde.getData()[j].getMagneticField()[i] + ((i==sde.getData()[j].getMagneticField().length-1)?"":",");
 					}*/
                     System.out.println(out);
+                    //return out;
                 }
             }
         });

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Vertical screen orientation">
+</TextView>
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Acceleration"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/tvAcc" />
+
+    <TextView
+        android:text="Magnetic Field"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/tvMag" />
+
+    <TextView
+        android:text="Angular Rate"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:id="@+id/tvAng" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Button1">
+    </Button>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Button2">
+    </Button>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Button3">
+    </Button>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Button4">
+    </Button>
+</LinearLayout>
+</LinearLayout>

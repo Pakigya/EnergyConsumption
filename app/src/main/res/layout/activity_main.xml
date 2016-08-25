@@ -5,50 +5,53 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.conrartweller.energy.MainActivity">
 
     <TextView
         android:id="@+id/text_hello_world"
+        android:layout_width="224dp"
+        android:layout_height="91dp"
+        android:text="Test Well by Pakigya"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test Well by Pakigya"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="247dp" />
+        android:text="Hello, I am a TextView"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="Test Well by Pakigya"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        app:layout_constraintTop_toTopOf="@+id/activity_main"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0" />
+    <Button android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, I am a Button"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="456dp" />
 
     <TextView
         android:text="Acceleration"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="282dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="286dp"
         android:id="@+id/tvAcc" />
 
     <TextView
         android:text="Magnetic Field"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="325dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="330dp"
         android:id="@+id/tvMag" />
 
     <TextView
         android:text="Angular Rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="365dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="381dp"
         android:id="@+id/tvAng" />
 
 </android.support.constraint.ConstraintLayout>

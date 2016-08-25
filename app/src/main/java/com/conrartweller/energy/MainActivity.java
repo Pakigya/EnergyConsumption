@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
+import com.conrartweller.energy.SpatialExample.*;
 
 import org.w3c.dom.Text;
 
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private TextView mExampleTextView;
+    private TextView mAccTextView;
+    private TextView mAngTextView;
+    private TextView mMAgTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
         mExampleTextView.setText(helloWorld());
         //mExampleTextView.setText("This should work please");
         //((TextView)findViewById(R.id.text_hello_world)).setText("This should work please");
+
+        mAccTextView = (TextView)findViewById(R.id.tvAcc);
+        mExampleTextView.setText(helloWorld());
+        mAngTextView = (TextView)findViewById(R.id.tvAng);
+        mExampleTextView.setText(helloWorld());
+        mMAgTextView = (TextView)findViewById(R.id.tvMag);
+        mExampleTextView.setText(helloWorld());
+
 
     }
 

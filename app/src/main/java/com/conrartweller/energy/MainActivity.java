@@ -5,8 +5,15 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
-//import com.conrartweller.energy.SpatialExample.*;
+import com.conrartweller.energy.SpatialExample.*;
+
+import com.phidgets.PhidgetException;
+import com.phidgets.SpatialPhidget;
+import com.phidgets.event.AttachEvent;
+import com.phidgets.event.AttachListener;
 
 import org.w3c.dom.Text;
 
@@ -24,11 +31,60 @@ public class MainActivity extends AppCompatActivity {
     private TextView mAccTextView;
     private TextView mAngTextView;
     private TextView mMAgTextView;
+    private TextView mErrorTextView;
+
+    SpatialPhidget spatial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.example);
+
+        mAccTextView = (TextView)findViewById(R.id.tvAcc);
+
+        mAccTextView.setText("This is acceleration");
+
+        mMAgTextView = (TextView)findViewById(R.id.tvMag);
+        mMAgTextView.setText("Magnetic");
+
+        mAngTextView = (TextView)findViewById(R.id.tvAng);
+        mAngTextView.setText(helloWorld()+" Angular");
+
+
+        mErrorTextView = (TextView)findViewById(R.id.tvError);
+        mErrorTextView.setText("Here it shows the Error");
+
+        final Button button = (Button) findViewById(R.id.btnStart);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                /*
+                // Perform action on click
+                try {
+                    spatial = new SpatialPhidget();//spatial is a new object
+                    //mMAgTextView.setText("it was trying this");
+                }catch(Exception e) {
+                    //mMAgTextView.setText("Magnetic was sent to exception");
+                }*/
+            }
+        });
+
+
+
+        /*
+        spatial.addAttachListener(new AttachListener() {
+            public void attached(AttachEvent ae){
+                System.out.println("attachment of " + ae);//will try to find the attached spatical
+                try
+                {
+                    ((SpatialPhidget)ae.getSource()).setDataRate(496); //set data rate to 496ms
+                }
+                catch (PhidgetException pe)
+                {
+                    mErrorTextView.setText("Problem setting data rate!");
+                }
+            }
+        });
+        */
 
         //setContentView(R.layout.activity_main);
         //((TextView)findViewById(R.id.text_hello_world)).setText(helloWorld());
@@ -44,16 +100,6 @@ public class MainActivity extends AppCompatActivity {
         //((TextView)findViewById(R.id.text_hello_world)).setText("This should work please");
 
 //        mAccTextView = (TextView)findViewById(R.id.tvAcc);
-        mAccTextView = (TextView)findViewById(R.id.tvAcc);
-
-        mAccTextView.setText("This is accelerartion");
-
-
-        mAngTextView = (TextView)findViewById(R.id.tvAng);
-        mAngTextView.setText(helloWorld());
-
-        mMAgTextView = (TextView)findViewById(R.id.tvMag);
-        mMAgTextView.setText("Hello from the other sideeeeee... magnetic field check check check 2");
 
 
     }

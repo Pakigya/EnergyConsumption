@@ -14,7 +14,7 @@
         android:layout_height="91dp"
         android:text="Test Well by Pakigya"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="147dp" />
+        tools:layout_editor_absoluteY="48dp" />
 
     <TextView android:id="@+id/text"
         android:layout_width="wrap_content"
@@ -27,8 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello, I am a Button"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="456dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="367dp" />
 
     <TextView
         android:text="Acceleration"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="381dp"
+        tools:layout_editor_absoluteY="169dp"
         android:id="@+id/tvAng" />
 
 </android.support.constraint.ConstraintLayout>

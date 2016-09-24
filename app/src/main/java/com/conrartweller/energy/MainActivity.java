@@ -23,7 +23,7 @@ import org.w3c.dom.Text;
 */
 public class MainActivity extends AppCompatActivity {
 
-    public native String .helloWorld();
+    public native String helloWorld();
     static {
         System.loadLibrary("helloworld");
     }

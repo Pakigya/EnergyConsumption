@@ -2,6 +2,7 @@ package com.conrartweller.energy;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -22,7 +23,7 @@ import org.w3c.dom.Text;
 */
 public class MainActivity extends AppCompatActivity {
 
-    public native String helloWorld();
+    public native String .helloWorld();
     static {
         System.loadLibrary("helloworld");
     }
@@ -65,8 +66,12 @@ public class MainActivity extends AppCompatActivity {
                 }catch(Exception e) {
                     //mMAgTextView.setText("Magnetic was sent to exception");
                 }*/
+
+                Intent intent = new Intent(MainActivity.this, wifiDemo.class);
+                startActivity(intent);
             }
         });
+
 
 
 

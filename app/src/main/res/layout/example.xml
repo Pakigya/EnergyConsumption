@@ -18,6 +18,12 @@ android:orientation="vertical">
         android:orientation="vertical">
 
         <TextView
+            android:text="Signal Status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textStatus" />
+
+        <TextView
             android:text="Acceleration"
             android:layout_width="match_parent"
             android:layout_height="50dp"
